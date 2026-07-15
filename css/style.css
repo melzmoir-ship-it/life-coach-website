@@ -8,3 +8,17 @@
 .file-drop.dragover { border-color: #10b981; background-color: #ecfdf5; }
 .file-drop.has-file { border-color: #10b981; background-color: #f0fdf4; }
 html { scroll-behavior: smooth; }
+
+.hero-bg {
+  background-image: url('https://picsum.photos/id/1015/2000/1200');
+}
+
+.help-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(68, 95, 73, 0.12);
+  border-color: #c8dbc8;
+}

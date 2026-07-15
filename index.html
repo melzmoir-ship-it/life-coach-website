@@ -3,115 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Life Coach</title>
+  <meta name="description" content="Life coaching for career transitions, divorce and life changes, confidence, burnout, and getting your motivation back. Book a free discovery call.">
+  <title>Your Name | Life Coach — Stuck, Overwhelmed, or Ready for Something New</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: { 50: '#f4f7f4', 100: '#e6efe6', 200: '#c8dbc8', 500: '#6b8f71', 600: '#557a5b', 700: '#445f49', 800: '#374c3a' },
+            cream: { 50: '#faf9f7', 100: '#f5f3ef' }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://picsum.photos/id/1015/2000/1200'); }
-    .nav-link { transition: all 0.3s; }
-    .nav-link:hover { color: #10b981; transform: translateY(-2px); }
-    .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .mobile-menu.open { max-height: 480px; }
-  </style>
 </head>
-<body class="bg-zinc-50 font-sans">
+<body class="bg-cream-50 font-sans text-stone-700 antialiased">
 
-  <nav class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="bg-cream-50/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-sage-100">
     <div class="max-w-7xl mx-auto px-6 py-5">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="text-3xl font-bold text-emerald-700">YourName</a>
+        <a href="index.html" class="text-3xl font-bold text-sage-700">YourName</a>
         <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <a href="index.html" class="nav-link text-emerald-600 font-semibold">Home</a>
-          <a href="about.html" class="nav-link text-zinc-700">About</a>
-          <a href="services.html" class="nav-link text-zinc-700">Services</a>
-          <a href="testimonials.html" class="nav-link text-zinc-700">Stories</a>
-          <a href="join.html" class="nav-link text-zinc-700">For Coaches</a>
-          <a href="contact.html" class="nav-link text-zinc-700">Contact</a>
+          <a href="index.html" class="nav-link text-sage-700 font-semibold">Home</a>
+          <a href="about.html" class="nav-link text-stone-600">About</a>
+          <a href="services.html" class="nav-link text-stone-600">Services</a>
+          <a href="testimonials.html" class="nav-link text-stone-600">Stories</a>
+          <a href="#who-i-help" class="nav-link text-stone-600">Who I Help</a>
+          <a href="join.html" class="nav-link text-stone-600">For Coaches</a>
+          <a href="contact.html" class="nav-link text-stone-600">Contact</a>
         </div>
         <div class="flex items-center gap-3">
-          <a href="contact.html" class="hidden sm:inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full font-semibold transition text-sm">Book Discovery Call</a>
+          <a href="contact.html" class="hidden sm:inline-block bg-sage-600 hover:bg-sage-700 text-white px-6 py-3 rounded-full font-semibold transition text-sm">Book a Free Discovery Call</a>
           <button id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
-            <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block transition-all"></span>
-            <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block transition-all"></span>
-            <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block transition-all"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
           </button>
         </div>
       </div>
       <div id="mobile-menu" class="mobile-menu md:hidden">
-        <div class="flex flex-col gap-1 pt-4 pb-2 border-t border-zinc-100 mt-4">
-          <a href="index.html" class="px-3 py-2.5 rounded-lg text-emerald-600 font-semibold bg-emerald-50">Home</a>
-          <a href="about.html" class="px-3 py-2.5 rounded-lg text-zinc-700 hover:bg-zinc-50">About</a>
-          <a href="services.html" class="px-3 py-2.5 rounded-lg text-zinc-700 hover:bg-zinc-50">Services</a>
-          <a href="testimonials.html" class="px-3 py-2.5 rounded-lg text-zinc-700 hover:bg-zinc-50">Stories</a>
-          <a href="join.html" class="px-3 py-2.5 rounded-lg text-zinc-700 hover:bg-zinc-50">For Coaches</a>
-          <a href="contact.html" class="px-3 py-2.5 rounded-lg text-zinc-700 hover:bg-zinc-50">Contact</a>
+        <div class="flex flex-col gap-1 pt-4 pb-2 border-t border-sage-100 mt-4">
+          <a href="index.html" class="px-3 py-2.5 rounded-lg text-sage-700 font-semibold bg-sage-50">Home</a>
+          <a href="about.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">About</a>
+          <a href="services.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Services</a>
+          <a href="testimonials.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Stories</a>
+          <a href="#who-i-help" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Who I Help</a>
+          <a href="join.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">For Coaches</a>
+          <a href="contact.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Contact</a>
+          <a href="contact.html" class="mt-2 text-center bg-sage-600 text-white px-5 py-3 rounded-full font-semibold">Book a Free Discovery Call</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <section class="hero-bg h-screen flex items-center text-white bg-cover bg-center">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
-        It's Time to Live <span class="text-emerald-300">Your Best Life</span>
+  <!-- Hero: brand + one headline + subhead + CTA + full-bleed visual -->
+  <section class="hero-bg relative min-h-screen flex items-center text-white bg-cover bg-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-sage-800/70 via-sage-800/55 to-stone-900/70"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center pt-16 pb-24">
+      <p class="text-sage-100 font-semibold tracking-wide text-lg md:text-2xl mb-6">YourName</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        Life Coaching for the Moments You Feel Stuck, Overwhelmed, or Ready for Something New
       </h1>
-      <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10">
-        Personalized life coaching to help you gain clarity, overcome fear, and create lasting transformation.
+      <p class="text-lg md:text-xl text-sage-50/95 max-w-2xl mx-auto mb-10 leading-relaxed">
+        One-on-one coaching for career transitions, divorce and life changes, confidence, burnout, and getting your motivation back.
       </p>
-      <div class="flex flex-col sm:flex-row gap-5 justify-center">
-        <a href="contact.html" class="bg-white text-emerald-700 px-10 py-5 rounded-full text-lg font-semibold hover:bg-emerald-50 transition">Start Your Journey Free</a>
-        <a href="#services" class="border-2 border-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-white/10 transition">See How I Help</a>
-      </div>
+      <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-sage-800 px-10 py-5 rounded-full text-lg font-semibold hover:bg-sage-50 transition shadow-lg">
+        Book a Free Discovery Call
+      </a>
     </div>
   </section>
 
-  <section id="services" class="py-24 bg-white">
+  <!-- Who I Help -->
+  <section id="who-i-help" class="py-20 md:py-28 bg-cream-50 scroll-mt-24">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-4">My Coaching Services</h2>
-      <p class="text-center text-zinc-600 mb-16 max-w-2xl mx-auto">Transformational support tailored to your unique goals</p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-50 p-10 rounded-3xl hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4">Clarity & Purpose</h3>
-          <p class="text-zinc-600 mb-6">Discover what you truly want and create a clear roadmap to get there.</p>
-          <a href="services.html" class="text-emerald-600 font-medium">Learn more →</a>
-        </div>
-        <div class="bg-zinc-50 p-10 rounded-3xl hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4">Confidence & Mindset</h3>
-          <p class="text-zinc-600 mb-6">Break limiting beliefs and step into the most empowered version of yourself.</p>
-          <a href="services.html" class="text-emerald-600 font-medium">Learn more →</a>
-        </div>
-        <div class="bg-zinc-50 p-10 rounded-3xl hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold mb-4">Life Transitions</h3>
-          <p class="text-zinc-600 mb-6">Navigate career changes, relationships, or major life shifts with confidence.</p>
-          <a href="services.html" class="text-emerald-600 font-medium">Learn more →</a>
-        </div>
+      <div class="text-center mb-14">
+        <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Who I Help</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800">Wherever you are, you deserve support</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-compass"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Feeling Stuck</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">You know something needs to change, but you can't see the next step.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-briefcase"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Career Transition</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Changing jobs, changing industries, or starting over — get clarity and a plan.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-heart-broken"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Divorce & Life Transitions</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Rebuild your sense of identity, routine, and confidence after a major life change.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-seedling"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Confidence & Self-Esteem</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Quiet the self-doubt and start trusting your own decisions again.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-battery-quarter"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Burnout Recovery</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Feeling overwhelmed and depleted? Get sustainable strategies to recover your energy.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100 sm:col-span-2 lg:col-span-1">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-cloud-sun"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Low Mood & Motivation</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Coaching support for people feeling emotionally heavy or unmotivated, working alongside — not replacing — therapy when needed.</p>
+          <p class="mt-4 text-xs text-stone-500 leading-relaxed border-t border-sage-100 pt-3">
+            Life coaching supports personal growth and life transitions. It is not a substitute for therapy or mental health treatment.
+          </p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-comments"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Relationships & Communication</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Improve how you connect, set boundaries, and show up in your relationships.</p>
+        </article>
+
+        <article class="help-card bg-white p-7 rounded-2xl shadow-sm border border-sage-100">
+          <div class="w-10 h-10 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4"><i class="fas fa-map-signs"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-2">Purpose & Direction</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Figure out what you actually want the next chapter of your life to look like.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <section class="py-16 bg-zinc-100">
+  <!-- Stats (below first viewport) -->
+  <section class="py-14 bg-sage-700 text-white" aria-label="Coaching outcomes">
+    <div class="max-w-5xl mx-auto px-6 grid sm:grid-cols-3 gap-10 text-center">
+      <div>
+        <p class="text-4xl font-bold mb-2">99%</p>
+        <p class="text-sage-100 text-sm leading-relaxed">of coaching clients report being satisfied</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold mb-2">80%</p>
+        <p class="text-sage-100 text-sm leading-relaxed">say coaching improved their confidence</p>
+      </div>
+      <div>
+        <p class="text-4xl font-bold mb-2">73%</p>
+        <p class="text-sage-100 text-sm leading-relaxed">say it improved their relationships and wellbeing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Coaches teaser -->
+  <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <p class="text-emerald-600 font-medium uppercase tracking-wide text-sm mb-3">For Coaches</p>
-      <h2 class="text-3xl font-bold mb-4">Are You a Life Coach?</h2>
-      <p class="text-zinc-600 mb-8 max-w-xl mx-auto">Join our network of certified coaches. Apply with your questionnaire and CV to connect with clients and grow your practice.</p>
-      <a href="join.html" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold transition">
+      <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">For Coaches</p>
+      <h2 class="text-3xl font-bold text-stone-800 mb-4">Are You a Life Coach?</h2>
+      <p class="text-stone-600 mb-8 max-w-xl mx-auto">Join our network of certified coaches. Apply with your questionnaire and CV.</p>
+      <a href="join.html" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full font-semibold transition">
         <i class="fas fa-user-plus"></i> Apply to Join
       </a>
     </div>
   </section>
 
-  <section class="bg-emerald-700 py-20 text-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-6">Ready for Real Change?</h2>
-      <p class="text-xl mb-10">Book your free 30-minute discovery call today.</p>
-      <a href="contact.html" class="inline-block bg-white text-emerald-700 px-12 py-5 rounded-full text-xl font-semibold hover:bg-emerald-50">Schedule Free Call</a>
+  <!-- Closing CTA -->
+  <section id="book" class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0 bg-sage-800"></div>
+    <div class="absolute inset-0 opacity-30 bg-[url('https://picsum.photos/id/1015/1920/800')] bg-cover bg-center"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">You don't have to figure this out alone.</h2>
+      <p class="text-lg md:text-xl text-sage-100 mb-10 leading-relaxed">
+        Book a free 20-minute call and let's talk about where you're stuck and where you want to go.
+      </p>
+      <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-sage-800 px-10 py-5 rounded-full text-lg font-semibold hover:bg-sage-50 transition shadow-lg">
+        Book a Free Discovery Call
+      </a>
     </div>
   </section>
 
-  <footer class="bg-zinc-800 text-zinc-300 py-10">
-    <div class="max-w-6xl mx-auto px-6 text-center text-sm">
-      <p class="font-bold text-white text-lg mb-2">YourName</p>
+  <footer class="bg-stone-900 text-stone-400 py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm space-y-4">
+      <p class="font-bold text-white text-lg">YourName</p>
+      <p class="max-w-2xl mx-auto leading-relaxed text-xs text-stone-500">
+        Life coaching supports personal growth and life transitions. It is not a substitute for therapy or mental health treatment. If you're experiencing persistent depression, please also connect with a licensed therapist — I'm happy to help you find one.
+      </p>
       <p>&copy; 2026 Your Name. All rights reserved.</p>
     </div>
   </footer>
