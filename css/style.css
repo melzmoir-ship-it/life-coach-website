@@ -1,7 +1,7 @@
 .nav-link { transition: all 0.3s; }
 .nav-link:hover { color: #10b981; transform: translateY(-2px); }
 .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-.mobile-menu.open { max-height: 480px; }
+.mobile-menu.open { max-height: 640px; }
 .input-error { border-color: #ef4444 !important; }
 .error-message { color: #ef4444; font-size: 0.875rem; margin-top: 0.25rem; }
 .file-drop { border: 2px dashed #d4d4d8; transition: border-color 0.2s, background-color 0.2s; }
