@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Our Team | Life Coach Network</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-50 font-sans">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold text-emerald-700">YourName</a>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="index.html" class="nav-link text-zinc-700">Home</a>
+          <a href="about.html" class="nav-link text-zinc-700">About</a>
+          <a href="services.html" class="nav-link text-zinc-700">Services</a>
+          <a href="testimonials.html" class="nav-link text-zinc-700">Stories</a>
+          <a href="join.html" class="nav-link text-emerald-600 font-semibold">For Coaches</a>
+          <a href="contact.html" class="nav-link text-zinc-700">Contact</a>
+        </div>
+        <button id="mobile-menu-toggle" aria-label="Open menu" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex flex-col gap-1 pt-4 border-t border-zinc-100 mt-4">
+          <a href="index.html" class="px-3 py-2.5">Home</a>
+          <a href="about.html" class="px-3 py-2.5">About</a>
+          <a href="services.html" class="px-3 py-2.5">Services</a>
+          <a href="testimonials.html" class="px-3 py-2.5">Stories</a>
+          <a href="join.html" class="px-3 py-2.5 text-emerald-600 font-semibold">For Coaches</a>
+          <a href="contact.html" class="px-3 py-2.5">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-emerald-700 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Join Our Team of Coaches</h1>
+      <p class="text-xl text-emerald-100">Apply with your questionnaire and CV to become part of our trusted network.</p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="bg-white rounded-3xl shadow-sm p-8 md:p-10">
+        <h2 class="text-2xl font-bold mb-8">Coach Application</h2>
+        <form id="coach-signup-form" action="https://formsubmit.co/hello@yourname.com" method="POST" enctype="multipart/form-data" class="space-y-8">
+          <input type="hidden" name="_subject" value="New Coach Application">
+          <input type="text" name="_honey" style="display:none">
+
+          <div>
+            <h3 class="text-lg font-semibold text-emerald-700 mb-4">1. Personal Information</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="coach-name" class="block text-sm font-medium mb-2">Full Name *</label>
+                <input type="text" id="coach-name" name="full_name" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+              <div>
+                <label for="coach-email" class="block text-sm font-medium mb-2">Email *</label>
+                <input type="email" id="coach-email" name="email" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+              <div>
+                <label for="coach-phone" class="block text-sm font-medium mb-2">Phone *</label>
+                <input type="tel" id="coach-phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+              <div>
+                <label for="coach-location" class="block text-sm font-medium mb-2">City & Country *</label>
+                <input type="text" id="coach-location" name="location" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-emerald-700 mb-4">2. Questionnaire</h3>
+            <div class="space-y-4">
+              <div>
+                <label for="coach-niche" class="block text-sm font-medium mb-2">Primary specialty *</label>
+                <select id="coach-niche" name="coaching_niche" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                  <option value="">Select...</option>
+                  <option>Career & Leadership</option>
+                  <option>Confidence & Self-Worth</option>
+                  <option>Relationships & Communication</option>
+                  <option>Health, Wellness & Balance</option>
+                  <option>Life Transitions</option>
+                  <option>Executive & Performance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="coach-experience" class="block text-sm font-medium mb-2">Years of experience *</label>
+                <select id="coach-experience" name="years_experience" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                  <option value="">Select...</option>
+                  <option>Less than 1 year</option>
+                  <option>1-3 years</option>
+                  <option>3-5 years</option>
+                  <option>5-10 years</option>
+                  <option>10+ years</option>
+                </select>
+              </div>
+              <div>
+                <label for="coach-active-clients" class="block text-sm font-medium mb-2">Active clients *</label>
+                <select id="coach-active-clients" name="active_clients" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                  <option value="">Select...</option>
+                  <option>0 - just starting</option>
+                  <option>1-5</option>
+                  <option>6-15</option>
+                  <option>16-30</option>
+                  <option>30+</option>
+                </select>
+              </div>
+              <div>
+                <label for="coach-certifications" class="block text-sm font-medium mb-2">Certifications *</label>
+                <textarea id="coach-certifications" name="certifications" rows="2" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label for="coach-approach" class="block text-sm font-medium mb-2">Coaching style *</label>
+                <textarea id="coach-approach" name="coaching_approach" rows="3" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label for="coach-clients" class="block text-sm font-medium mb-2">Who do you serve best? *</label>
+                <textarea id="coach-clients" name="typical_clients" rows="2" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label for="coach-transformation" class="block text-sm font-medium mb-2">Client transformation *</label>
+                <textarea id="coach-transformation" name="client_transformation" rows="2" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label for="coach-strength" class="block text-sm font-medium mb-2">Greatest strength *</label>
+                <textarea id="coach-strength" name="greatest_strength" rows="2" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label for="coach-why-join" class="block text-sm font-medium mb-2">Why join us? *</label>
+                <textarea id="coach-why-join" name="why_join" rows="2" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="coach-rate" class="block text-sm font-medium mb-2">Session rate *</label>
+                  <select id="coach-rate" name="hourly_rate" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="">Select...</option>
+                    <option>Under $75/session</option>
+                    <option>$75 - $100/session</option>
+                    <option>$100 - $150/session</option>
+                    <option>$150 - $200/session</option>
+                    <option>$200 - $300/session</option>
+                    <option>$300+/session</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="coach-timezone" class="block text-sm font-medium mb-2">Timezone *</label>
+                  <select id="coach-timezone" name="timezone" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="">Select...</option>
+                    <option>Pacific (PT)</option>
+                    <option>Mountain (MT)</option>
+                    <option>Central (CT)</option>
+                    <option>Eastern (ET)</option>
+                    <option>GMT / UTC</option>
+                    <option>Central European (CET)</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="coach-availability" class="block text-sm font-medium mb-2">Availability *</label>
+                  <select id="coach-availability" name="availability" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="">Select...</option>
+                    <option>5-10 hours</option>
+                    <option>10-20 hours</option>
+                    <option>20+ hours</option>
+                    <option>Flexible</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="coach-format" class="block text-sm font-medium mb-2">Session format *</label>
+                  <select id="coach-format" name="session_format" required class="w-full px-4 py-3 rounded-xl border border-zinc-200 bg-white outline-none focus:ring-2 focus:ring-emerald-500">
+                    <option value="">Select...</option>
+                    <option>Virtual only</option>
+                    <option>In-person only</option>
+                    <option>Both virtual and in-person</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="coach-languages" class="block text-sm font-medium mb-2">Languages *</label>
+                <input type="text" id="coach-languages" name="languages" required placeholder="e.g. English, Spanish" class="w-full px-4 py-3 rounded-xl border border-zinc-200 outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-emerald-700 mb-4">3. Upload CV</h3>
+            <div id="cv-drop-zone" class="file-drop rounded-2xl p-8 text-center cursor-pointer">
+              <input type="file" id="coach-cv" name="cv" accept=".pdf,.doc,.docx" required class="hidden">
+              <i class="fas fa-cloud-upload-alt text-emerald-600 text-4xl mb-4"></i>
+              <p class="font-medium text-zinc-700 mb-1">Drag & drop your CV, or click to browse</p>
+              <p class="text-sm text-zinc-500 mb-2">PDF, DOC, or DOCX — max 5 MB</p>
+              <p id="cv-file-name" class="text-sm text-emerald-600 font-medium hidden"></p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="coach-agree" name="agreement" required class="mt-1">
+            <label for="coach-agree" class="text-sm text-zinc-600">I confirm this information is accurate and I hold valid coaching credentials. *</label>
+          </div>
+
+          <button type="submit" id="coach-submit-btn" class="bg-emerald-600 hover:bg-emerald-700 text-white px-10 py-4 rounded-full font-semibold">
+            <i class="fas fa-paper-plane"></i> Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-zinc-800 text-zinc-300 py-8 text-center text-sm">&copy; 2026 Your Name</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

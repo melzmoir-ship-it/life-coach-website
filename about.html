@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Your Name Life Coach</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-50 font-sans">
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex justify-between items-center">
+        <a href="index.html" class="text-3xl font-bold text-emerald-700">YourName</a>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="index.html" class="nav-link text-zinc-700">Home</a>
+          <a href="about.html" class="nav-link text-emerald-600 font-semibold">About</a>
+          <a href="services.html" class="nav-link text-zinc-700">Services</a>
+          <a href="testimonials.html" class="nav-link text-zinc-700">Stories</a>
+          <a href="join.html" class="nav-link text-zinc-700">For Coaches</a>
+          <a href="contact.html" class="nav-link text-zinc-700">Contact</a>
+        </div>
+        <button id="mobile-menu-toggle" aria-label="Open menu" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <div class="flex flex-col gap-1 pt-4 border-t border-zinc-100 mt-4">
+          <a href="index.html" class="px-3 py-2.5">Home</a>
+          <a href="about.html" class="px-3 py-2.5 text-emerald-600 font-semibold">About</a>
+          <a href="services.html" class="px-3 py-2.5">Services</a>
+          <a href="testimonials.html" class="px-3 py-2.5">Stories</a>
+          <a href="join.html" class="px-3 py-2.5">For Coaches</a>
+          <a href="contact.html" class="px-3 py-2.5">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="bg-emerald-700 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
+      <p class="text-xl text-emerald-100">I'm here to help you find clarity, build confidence, and create a life that feels truly yours.</p>
+    </div>
+  </section>
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://picsum.photos/id/1027/600/700" alt="Coach photo" class="rounded-3xl shadow-xl w-full object-cover aspect-[4/5]" loading="lazy">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Hi, I'm Your Name</h2>
+        <p class="text-zinc-600 leading-relaxed mb-4">I'm a certified life coach passionate about helping people break through fear, self-doubt, and overwhelm.</p>
+        <p class="text-zinc-600 leading-relaxed">I believe you already have the answers inside you. My job is to ask the right questions and walk beside you as you build the life you deserve.</p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-emerald-700 py-16 text-white text-center">
+    <a href="contact.html" class="inline-block bg-white text-emerald-700 px-10 py-4 rounded-full font-semibold">Book Free Call</a>
+  </section>
+  <footer class="bg-zinc-800 text-zinc-300 py-8 text-center text-sm">&copy; 2026 Your Name</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
