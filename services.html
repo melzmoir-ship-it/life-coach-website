@@ -1,152 +1,506 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Affordable life coaching in South Africa — packages from R1,200. Virtual sessions nationwide in ZAR.">
-  <title>Services &amp; Pricing (ZAR) | Your Name Life Coach</title>
+  <meta name="description" content="Compassionate, affordable counselling for real-life challenges in South Africa. Free first consultation. Confidential support online nationwide.">
+  <title>What We Do | Real Support for Real Life</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage: { 50: '#f4f7f4', 100: '#e6efe6', 200: '#c8dbc8', 500: '#6b8f71', 600: '#557a5b', 700: '#445f49', 800: '#374c3a' },
+            cream: { 50: '#faf9f7', 100: '#f5f3ef' },
+            warm: { 100: '#f9f4ef', 200: '#efe6dc' }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-zinc-50 font-sans">
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5">
+<body class="bg-cream-50 font-sans text-stone-700 antialiased has-sticky-cta">
+
+  <!-- Top notice: not a crisis service -->
+  <div class="bg-warm-200 text-stone-700 text-xs sm:text-sm text-center py-2.5 px-4 border-b border-warm-100" role="note">
+    <span class="font-medium">Not an emergency service.</span> If you or someone you know is in crisis, contact <a href="tel:0800567567" class="underline font-semibold text-sage-800">SADAG 0800 567 567</a> or <a href="tel:0861322322" class="underline font-semibold text-sage-800">Lifeline 0861 322 322</a>.
+  </div>
+
+  <nav class="bg-cream-50/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-sage-100">
+    <div class="max-w-7xl mx-auto px-6 py-4">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="text-3xl font-bold text-emerald-700">YourName</a>
-        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <a href="index.html" class="nav-link text-zinc-700">Home</a>
-          <a href="about.html" class="nav-link text-zinc-700">About</a>
-          <a href="services.html" class="nav-link text-emerald-600 font-semibold">Services</a>
-          <a href="testimonials.html" class="nav-link text-zinc-700">Stories</a>
-          <a href="blog.html" class="nav-link text-zinc-700">Blog</a>
-          <a href="join.html" class="nav-link text-zinc-700">For Coaches</a>
-          <a href="contact.html" class="nav-link text-zinc-700">Contact</a>
+        <a href="index.html" class="text-2xl md:text-3xl font-bold text-sage-700">YourName</a>
+        <div class="hidden md:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-stone-600">Home</a>
+          <a href="about.html" class="nav-link text-stone-600">About</a>
+          <a href="services.html" class="nav-link text-sage-700 font-semibold" aria-current="page">What We Do</a>
+          <a href="testimonials.html" class="nav-link text-stone-600">Stories</a>
+          <a href="blog.html" class="nav-link text-stone-600">Blog</a>
+          <a href="join.html" class="nav-link text-stone-600">Join Our Team</a>
+          <a href="contact.html" class="nav-link text-stone-600">Contact</a>
         </div>
-        <button id="mobile-menu-toggle" aria-label="Open menu" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
-          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
-          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
-          <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
-        </button>
+        <div class="flex items-center gap-3">
+          <a href="contact.html" class="hidden lg:inline-flex bg-sage-600 hover:bg-sage-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition">Free First Consultation</a>
+          <button id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
+            <span class="hamburger-line w-6 h-0.5 bg-stone-700 block transition-all"></span>
+          </button>
+        </div>
       </div>
       <div id="mobile-menu" class="mobile-menu md:hidden">
-        <div class="flex flex-col gap-1 pt-4 border-t border-zinc-100 mt-4">
-          <a href="index.html" class="px-3 py-2.5">Home</a>
-          <a href="about.html" class="px-3 py-2.5">About</a>
-          <a href="services.html" class="px-3 py-2.5 text-emerald-600 font-semibold">Services</a>
-          <a href="testimonials.html" class="px-3 py-2.5">Stories</a>
-          <a href="blog.html" class="px-3 py-2.5">Blog</a>
-          <a href="join.html" class="px-3 py-2.5">For Coaches</a>
-          <a href="contact.html" class="px-3 py-2.5">Contact</a>
+        <div class="flex flex-col gap-1 pt-4 pb-2 border-t border-sage-100 mt-3">
+          <a href="index.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Home</a>
+          <a href="about.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">About</a>
+          <a href="services.html" class="px-3 py-2.5 rounded-lg text-sage-700 font-semibold bg-sage-50">What We Do</a>
+          <a href="testimonials.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Stories</a>
+          <a href="blog.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Blog</a>
+          <a href="join.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Join Our Team</a>
+          <a href="contact.html" class="px-3 py-2.5 rounded-lg text-stone-700 hover:bg-sage-50">Contact</a>
+          <a href="contact.html" class="mt-2 text-center bg-sage-600 text-white px-5 py-3 rounded-full font-semibold">Book Free First Consultation</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <section class="bg-emerald-700 text-white py-20 text-center">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Services &amp; Pricing</h1>
-      <p class="text-xl text-emerald-100 mb-2">Professional coaching at prices that work for South Africans.</p>
-      <p class="text-emerald-200 text-sm">All fees in <strong>South African Rand (ZAR)</strong> · Virtual sessions nationwide · Payment plans on request</p>
+  <!-- Hero -->
+  <header class="services-hero relative text-white">
+    <div class="absolute inset-0 bg-gradient-to-br from-sage-800/85 via-sage-700/75 to-stone-800/80"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
+      <p class="text-sage-100 text-sm font-medium uppercase tracking-widest mb-5">What we do</p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8">Real Support for Real Life</h1>
+      <p class="text-lg md:text-xl text-sage-50/95 leading-relaxed mb-5 max-w-3xl mx-auto">
+        Life can be difficult, unpredictable and overwhelming. Relationships change, families experience pressure, careers become uncertain, and sometimes we simply reach a point where we need someone to talk to.
+      </p>
+      <p class="text-base md:text-lg text-sage-100/90 leading-relaxed mb-10 max-w-3xl mx-auto">
+        We are a team of compassionate counsellors who provide a safe, respectful and non-judgemental space where you can feel heard, work through life's challenges and begin finding a way forward.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-sage-800 px-8 py-4 rounded-full text-base font-semibold hover:bg-sage-50 transition shadow-lg w-full sm:w-auto">
+          Book Your Free First Consultation
+        </a>
+        <a href="#counsellors" class="inline-flex items-center justify-center gap-2 border-2 border-white/80 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 transition w-full sm:w-auto">
+          Meet Our Counsellors
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-sage-200/90">Your first consultation is free · No obligation to continue</p>
+    </div>
+  </header>
+
+  <!-- Trust indicators -->
+  <section class="bg-white border-b border-sage-100 py-8" aria-label="What you can expect from us">
+    <div class="max-w-5xl mx-auto px-6">
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <li class="flex flex-col items-center text-center gap-2">
+          <span class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-lg" aria-hidden="true"><i class="fas fa-lock"></i></span>
+          <span class="font-semibold text-stone-800 text-sm">Confidential</span>
+        </li>
+        <li class="flex flex-col items-center text-center gap-2">
+          <span class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-lg" aria-hidden="true"><i class="fas fa-heart"></i></span>
+          <span class="font-semibold text-stone-800 text-sm">Compassionate</span>
+        </li>
+        <li class="flex flex-col items-center text-center gap-2">
+          <span class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-lg" aria-hidden="true"><i class="fas fa-hand-holding-heart"></i></span>
+          <span class="font-semibold text-stone-800 text-sm">Affordable</span>
+        </li>
+        <li class="flex flex-col items-center text-center gap-2">
+          <span class="w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-lg" aria-hidden="true"><i class="fas fa-video"></i></span>
+          <span class="font-semibold text-stone-800 text-sm">Online Support</span>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- 1:1 -->
-  <section class="py-16 bg-white">
+  <!-- What We Do -->
+  <section class="py-20 md:py-28 bg-cream-50">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div>
-          <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">Most flexible</span>
-          <h2 class="text-3xl font-bold mb-4">1:1 Life Coaching</h2>
-          <p class="text-zinc-600 leading-relaxed mb-6">60-minute virtual sessions — Zoom or WhatsApp video. Weekly or fortnightly. Perfect if you want to start small before committing to a package.</p>
-          <p class="text-4xl font-bold text-emerald-700 mb-1">R450 <span class="text-lg font-normal text-zinc-500">/ session</span></p>
-          <p class="text-sm text-zinc-500 mb-6">Less than many gym memberships — and it actually shifts how you show up in life.</p>
-          <a href="contact.html" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full font-semibold">Book a Session</a>
+          <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">What we do</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-6 leading-snug">Affordable counselling for life's real challenges</h2>
+          <p class="text-stone-600 leading-relaxed mb-5">
+            We provide affordable counselling and personal support for people navigating real-life challenges and changes.
+          </p>
+          <p class="text-stone-600 leading-relaxed mb-5">
+            Our counsellors bring together relevant training, professional knowledge and an understanding of the realities people face outside of a textbook. We listen without judgement, help you make sense of what you are experiencing and support you in identifying practical steps that feel right for your life.
+          </p>
+          <p class="text-stone-600 leading-relaxed">
+            We do not tell you what decisions to make. We help you explore your thoughts, recognise patterns, understand your needs and move forward with greater clarity and confidence.
+          </p>
         </div>
-        <div class="bg-zinc-50 rounded-3xl p-8">
-          <ul class="space-y-3 text-zinc-700 text-sm">
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-600 mt-0.5"></i> Personalised action steps after each call</li>
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-600 mt-0.5"></i> WhatsApp check-in between sessions (optional)</li>
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-600 mt-0.5"></i> Evening &amp; Saturday slots available</li>
-            <li class="flex gap-3"><i class="fas fa-check text-emerald-600 mt-0.5"></i> EFT, card, or PayFast</li>
-          </ul>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=600&fit=crop" alt="Two people having a warm, relaxed conversation outdoors" class="rounded-3xl shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" width="800" height="600">
+          <div class="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-white rounded-2xl shadow-md p-5 max-w-[220px] border border-sage-100 hidden sm:block">
+            <p class="text-sage-700 font-semibold text-sm mb-1">A space that feels human</p>
+            <p class="text-stone-500 text-xs leading-relaxed">Warm, respectful conversations — not a clinical checklist.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Packages -->
-  <section class="py-16 bg-zinc-50">
+  <!-- How We Can Support You -->
+  <section id="support" class="py-20 md:py-28 bg-white scroll-mt-24">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-4">Coaching Packages</h2>
-      <p class="text-center text-zinc-600 mb-12 max-w-xl mx-auto">Save when you commit — packages can be paid in two instalments on request.</p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
-          <h3 class="text-xl font-bold mb-1">Clarity Kickstart</h3>
-          <p class="text-sm text-zinc-500 mb-4">Get unstuck in 3 sessions</p>
-          <p class="text-3xl font-bold text-emerald-700 mb-1">R1,200</p>
-          <p class="text-xs text-zinc-400 mb-6">R400/session · save R150</p>
-          <ul class="space-y-2 text-sm text-zinc-600 mb-8">
-            <li><i class="fas fa-check text-emerald-600"></i> 3 × 60-min sessions</li>
-            <li><i class="fas fa-check text-emerald-600"></i> Values &amp; goals worksheet</li>
-            <li><i class="fas fa-check text-emerald-600"></i> 2-week WhatsApp support</li>
-          </ul>
-          <a href="contact.html" class="block text-center border-2 border-emerald-600 text-emerald-700 py-3 rounded-full font-semibold hover:bg-emerald-50">Get Started</a>
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">How we can support you</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800">Whatever you're facing, you don't have to face it alone</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-route"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Life Changes and Transitions</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Support through separation, relocation, career changes, changing family circumstances or starting again.</p>
+        </article>
+
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-people-arrows"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Relationship and Family Challenges</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">A safe space to work through communication difficulties, conflict, boundaries and changing relationships.</p>
+        </article>
+
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Stress and Feeling Overwhelmed</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Practical, compassionate support when responsibilities, uncertainty or emotional pressure begin to feel too heavy.</p>
+        </article>
+
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-seedling"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Confidence and Personal Growth</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Explore self-worth, limiting beliefs and the changes you want to make in your life.</p>
+        </article>
+
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-briefcase"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Career and Workplace Challenges</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Support with workplace pressure, difficult professional relationships, career uncertainty or finding a new direction.</p>
+        </article>
+
+        <article class="help-card bg-cream-50 p-8 rounded-3xl border border-sage-100">
+          <div class="w-11 h-11 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5 text-lg" aria-hidden="true"><i class="fas fa-sun"></i></div>
+          <h3 class="text-lg font-semibold text-stone-800 mb-3">Loss, Disappointment and Starting Over</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Space to process difficult experiences, adjust to change and begin rebuilding at your own pace.</p>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-8 py-3.5 rounded-full font-semibold transition">
+          Book Your Free First Consultation <i class="fas fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Counsellors -->
+  <section id="counsellors" class="py-20 md:py-28 bg-sage-50 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Meet our counsellors</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">A caring team — not a single face on a brochure</h2>
+        <p class="text-stone-600 leading-relaxed">Different backgrounds, shared values: listen first, respect always, and meet people where they actually are.</p>
+      </div>
+
+      <!-- Team photograph -->
+      <figure class="mb-14 rounded-3xl overflow-hidden shadow-md border border-sage-200">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=500&fit=crop" alt="Our counselling team collaborating in a bright, welcoming space" class="w-full object-cover max-h-[320px] md:max-h-[400px]" loading="lazy" width="1200" height="500">
+        <figcaption class="bg-white px-6 py-4 text-sm text-stone-500 text-center">The people behind the conversations — approachable, diverse and invested in your wellbeing.</figcaption>
+      </figure>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=320&fit=crop" alt="Lerato Mokoena" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">Lerato Mokoena</h3>
+            <p class="text-sage-700 text-sm mb-3">Johannesburg · Life transitions &amp; separation</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Diploma in Counselling · Trauma-informed counselling short course</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Warm and practical. Helps you rebuild routine and identity when life has shifted underneath you.</p>
+          </div>
+        </article>
+
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=320&fit=crop" alt="David van Wyk" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">David van Wyk</h3>
+            <p class="text-sage-700 text-sm mb-3">Cape Town · Relationships &amp; family</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Certificate in Counselling Skills · Family systems counselling module</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Calm and direct. Creates space for honest conversations about boundaries, conflict and changing roles at home.</p>
+          </div>
+        </article>
+
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=320&fit=crop" alt="Aisha Patel" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">Aisha Patel</h3>
+            <p class="text-sage-700 text-sm mb-3">Durban · Stress, confidence &amp; self-worth</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Advanced Certificate in Counselling · Mindfulness-based support training</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Gentle and encouraging. Works at your pace when pressure or self-doubt has been running the show.</p>
+          </div>
+        </article>
+
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=320&fit=crop" alt="Thabo Nkosi" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">Thabo Nkosi</h3>
+            <p class="text-sage-700 text-sm mb-3">Pretoria · Career &amp; workplace challenges</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Certificate in Life Skills &amp; Counselling · Career guidance counselling module</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Straightforward and supportive. Helps you untangle work pressure, difficult colleagues and what you want next.</p>
+          </div>
+        </article>
+
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=320&fit=crop" alt="Nomvula Dlamini" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">Nomvula Dlamini</h3>
+            <p class="text-sage-700 text-sm mb-3">Gqeberha · Loss, grief &amp; starting over</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Certificate in Trauma-Informed Counselling Skills · Bereavement support training</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Patient and present. No rush to "move on" — space to adjust, mourn and rebuild in your own time.</p>
+          </div>
+        </article>
+
+        <article class="help-card bg-white rounded-3xl overflow-hidden border border-sage-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=320&fit=crop" alt="Zinhle Khumalo" class="w-full h-48 object-cover object-top" loading="lazy" width="400" height="320">
+          <div class="p-6">
+            <h3 class="font-semibold text-stone-800 text-lg">Zinhle Khumalo</h3>
+            <p class="text-sage-700 text-sm mb-3">Bloemfontein · Young adults &amp; life direction</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Training</p>
+            <p class="text-sm text-stone-600 mb-3">Diploma in Counselling · Youth and student support specialisation</p>
+            <p class="text-xs font-medium text-stone-500 uppercase tracking-wide mb-2">Approach</p>
+            <p class="text-sm text-stone-600 leading-relaxed">Relatable and honest. For when you're figuring out who you are, what you want, and how to take the next step.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="text-xs text-stone-500 text-center mt-8 max-w-2xl mx-auto leading-relaxed">
+        Training details reflect each counsellor's completed qualifications as provided to us. Our team offers counselling support — not medical, psychiatric or specialist psychological treatment. We refer onward when your needs fall outside our scope.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why We Do This Work -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img src="https://images.unsplash.com/photo-1491438590914-bc09fca4d4c0?w=800&h=600&fit=crop" alt="People walking together along a tree-lined path" class="rounded-3xl shadow-lg w-full object-cover aspect-[4/3]" loading="lazy" width="800" height="600">
         </div>
-        <div class="bg-emerald-600 text-white p-8 rounded-3xl shadow-lg relative">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-zinc-900 text-xs font-bold px-3 py-1 rounded-full">BEST VALUE</span>
-          <h3 class="text-xl font-bold mb-1">Deep Transformation</h3>
-          <p class="text-sm text-emerald-100 mb-4">Real change over 10 weeks</p>
-          <p class="text-3xl font-bold mb-1">R3,900</p>
-          <p class="text-xs text-emerald-200 mb-6">R390/session · save R600</p>
-          <ul class="space-y-2 text-sm text-emerald-50 mb-8">
-            <li><i class="fas fa-check"></i> 10 × 60-min sessions</li>
-            <li><i class="fas fa-check"></i> Custom 90-day roadmap</li>
-            <li><i class="fas fa-check"></i> Unlimited WhatsApp voice notes</li>
-            <li><i class="fas fa-check"></i> Mid-program review call</li>
-          </ul>
-          <a href="contact.html" class="block text-center bg-white text-emerald-700 py-3 rounded-full font-semibold hover:bg-emerald-50">Get Started</a>
-        </div>
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
-          <h3 class="text-xl font-bold mb-1">Momentum Builder</h3>
-          <p class="text-sm text-zinc-500 mb-4">Steady progress over 6 sessions</p>
-          <p class="text-3xl font-bold text-emerald-700 mb-1">R2,400</p>
-          <p class="text-xs text-zinc-400 mb-6">R400/session · save R300</p>
-          <ul class="space-y-2 text-sm text-zinc-600 mb-8">
-            <li><i class="fas fa-check text-emerald-600"></i> 6 × 60-min sessions</li>
-            <li><i class="fas fa-check text-emerald-600"></i> Accountability check-ins</li>
-            <li><i class="fas fa-check text-emerald-600"></i> Goal-tracking template</li>
-          </ul>
-          <a href="contact.html" class="block text-center border-2 border-emerald-600 text-emerald-700 py-3 rounded-full font-semibold hover:bg-emerald-50">Get Started</a>
+        <div class="order-1 lg:order-2">
+          <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Why we do this work</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-6">Because everyone deserves to feel heard</h2>
+          <p class="text-stone-600 leading-relaxed mb-5">
+            We believe that everyone deserves to feel heard and supported.
+          </p>
+          <p class="text-stone-600 leading-relaxed mb-5">
+            Our work is rooted in a genuine love for people and in seeing them recognise their strengths, regain confidence and grow through difficult seasons. We understand that life does not always follow the path we expected — and that needing support is part of being human.
+          </p>
+          <p class="text-stone-600 leading-relaxed">
+            We are here for the real world: the difficult conversations, uncertain decisions, relationship struggles, financial pressure and major changes that can affect how we think, feel and cope.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Workshop + Career -->
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-      <div class="border border-zinc-100 rounded-3xl p-8">
-        <h3 class="text-xl font-bold mb-2">Group Workshop</h3>
-        <p class="text-zinc-600 text-sm mb-4">Small groups (max 8), monthly themes — purpose, boundaries, confidence.</p>
-        <p class="text-3xl font-bold text-emerald-700 mb-6">R350 <span class="text-lg font-normal text-zinc-500">/ person</span></p>
-        <a href="contact.html" class="inline-block border-2 border-emerald-600 text-emerald-700 px-6 py-3 rounded-full font-semibold text-sm">Join next workshop</a>
+  <!-- Affordable, Accessible Support -->
+  <section class="py-20 md:py-28 bg-warm-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Affordable, accessible support</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-6">Caring support shouldn't be out of reach</h2>
+      <p class="text-stone-600 leading-relaxed mb-5 max-w-2xl mx-auto">
+        Getting support should not be limited to people who can afford high private-practice fees.
+      </p>
+      <p class="text-stone-600 leading-relaxed mb-5 max-w-2xl mx-auto">
+        We aim to provide caring, practical counselling at a more affordable price, without making anyone feel that the quality of their support is being compromised.
+      </p>
+      <div class="bg-white rounded-3xl p-8 md:p-10 border border-sage-100 shadow-sm mt-10 text-left max-w-2xl mx-auto">
+        <div class="flex items-start gap-4">
+          <span class="flex-shrink-0 w-12 h-12 rounded-2xl bg-sage-100 text-sage-700 flex items-center justify-center text-xl" aria-hidden="true"><i class="fas fa-gift"></i></span>
+          <div>
+            <h3 class="font-semibold text-stone-800 text-lg mb-2">Your first consultation is free</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              This is an opportunity to discuss what you are facing, understand the type of support you may need and find the counsellor who is best suited to you. There is no pressure or obligation to continue.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="border border-zinc-100 rounded-3xl p-8">
-        <h3 class="text-xl font-bold mb-2">Career Clarity Programme</h3>
-        <p class="text-zinc-600 text-sm mb-4">6 sessions focused on job change, retrenchment recovery, or finding work that fits.</p>
-        <p class="text-3xl font-bold text-emerald-700 mb-6">R2,500 <span class="text-lg font-normal text-zinc-500">/ programme</span></p>
-        <a href="contact.html" class="inline-block border-2 border-emerald-600 text-emerald-700 px-6 py-3 rounded-full font-semibold text-sm">Start your career journey</a>
+      <a href="contact.html" class="inline-flex mt-10 items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-8 py-3.5 rounded-full font-semibold transition">
+        Claim Your Free Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 md:py-28 bg-cream-50 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">How it works</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800">Three simple steps to getting started</h2>
+      </div>
+
+      <ol class="grid md:grid-cols-3 gap-8 md:gap-10">
+        <li class="relative text-center md:text-left">
+          <span class="inline-flex w-14 h-14 rounded-2xl bg-sage-600 text-white font-bold text-xl items-center justify-center mb-5" aria-hidden="true">1</span>
+          <h3 class="text-xl font-semibold text-stone-800 mb-3">Book your free consultation</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">Tell us briefly what you would like support with. It only takes a few minutes — no perfect words required.</p>
+        </li>
+        <li class="relative text-center md:text-left">
+          <span class="inline-flex w-14 h-14 rounded-2xl bg-sage-600 text-white font-bold text-xl items-center justify-center mb-5" aria-hidden="true">2</span>
+          <h3 class="text-xl font-semibold text-stone-800 mb-3">Meet the right counsellor</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">We help connect you with a counsellor whose approach and experience suit your needs.</p>
+        </li>
+        <li class="relative text-center md:text-left">
+          <span class="inline-flex w-14 h-14 rounded-2xl bg-sage-600 text-white font-bold text-xl items-center justify-center mb-5" aria-hidden="true">3</span>
+          <h3 class="text-xl font-semibold text-stone-800 mb-3">Choose your way forward</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">If you feel comfortable continuing, you can book affordable sessions at a pace that works for you.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Our Commitment -->
+  <section class="py-20 md:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
+        <div class="lg:col-span-2">
+          <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Our commitment</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">What you can count on from us</h2>
+          <p class="text-stone-600 leading-relaxed">Every person's circumstances are different. Our counsellors are committed to offering:</p>
+        </div>
+        <ul class="lg:col-span-3 space-y-4">
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">A compassionate and non-judgemental space</span>
+          </li>
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">Respect for your individual experiences and decisions</span>
+          </li>
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">Honest, practical conversations</span>
+          </li>
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">Affordable and accessible support</span>
+          </li>
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">Appropriate confidentiality and professional boundaries</span>
+          </li>
+          <li class="flex gap-4 items-start p-5 rounded-2xl bg-cream-50 border border-sage-100">
+            <i class="fas fa-check-circle text-sage-600 mt-0.5" aria-hidden="true"></i>
+            <span class="text-stone-700 text-sm leading-relaxed">Referral to specialist or emergency services when your needs fall outside our scope</span>
+          </li>
+        </ul>
       </div>
     </div>
-    <p class="text-center text-sm text-zinc-500 mt-10 max-w-2xl mx-auto">Not sure what fits your budget? Your <strong>first discovery call is free</strong> — we'll find an option that works for you.</p>
   </section>
 
-  <section class="bg-emerald-700 py-14 text-white text-center">
-    <a href="contact.html" class="inline-block bg-white text-emerald-700 px-10 py-4 rounded-full font-semibold text-lg hover:bg-emerald-50">Book Free Discovery Call</a>
+  <!-- Session fees (View Our Services) -->
+  <section id="fees" class="py-20 md:py-24 bg-sage-50 scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-sage-600 font-medium uppercase tracking-wide text-sm mb-3">Session fees</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">Affordable rates in South African Rand</h2>
+        <p class="text-stone-600 text-sm leading-relaxed">All fees in ZAR · Virtual sessions nationwide · Payment plans available on request</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-3xl p-6 border border-sage-100 text-center">
+          <p class="text-sm text-stone-500 mb-1">Individual session</p>
+          <p class="text-3xl font-bold text-sage-700">R450</p>
+          <p class="text-xs text-stone-400 mt-2">60 minutes · Zoom or WhatsApp</p>
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-sage-100 text-center">
+          <p class="text-sm text-stone-500 mb-1">Clarity Kickstart</p>
+          <p class="text-3xl font-bold text-sage-700">R1,200</p>
+          <p class="text-xs text-stone-400 mt-2">3 sessions · save R150</p>
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-sage-200 text-center ring-2 ring-sage-500/30">
+          <p class="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-1">Popular</p>
+          <p class="text-sm text-stone-500 mb-1">Momentum Builder</p>
+          <p class="text-3xl font-bold text-sage-700">R2,400</p>
+          <p class="text-xs text-stone-400 mt-2">6 sessions · save R300</p>
+        </div>
+        <div class="bg-white rounded-3xl p-6 border border-sage-100 text-center">
+          <p class="text-sm text-stone-500 mb-1">Group workshop</p>
+          <p class="text-3xl font-bold text-sage-700">R350</p>
+          <p class="text-xs text-stone-400 mt-2">per person · small groups</p>
+        </div>
+      </div>
+      <p class="text-center text-sm text-stone-500 mt-8">Your <strong class="text-stone-700">first consultation remains free</strong> — we'll help you choose what fits.</p>
+    </div>
   </section>
 
-  <footer class="bg-zinc-800 text-zinc-300 py-8 text-center text-sm">&copy; 2026 Your Name · Prices in ZAR</footer>
+  <!-- Scope disclaimer -->
+  <section class="py-12 bg-stone-800 text-stone-300" aria-labelledby="scope-heading">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 id="scope-heading" class="text-lg font-semibold text-white mb-4">Important information about our service</h2>
+      <p class="text-sm leading-relaxed mb-4">
+        We are <strong class="text-stone-200">not an emergency or crisis service</strong> and our counselling does <strong class="text-stone-200">not replace medical, psychiatric or specialist psychological care</strong>. If you are in immediate danger, call <a href="tel:10111" class="text-sage-300 underline">10111</a> or go to your nearest emergency unit.
+      </p>
+      <p class="text-sm leading-relaxed text-stone-400">
+        For mental health crises in South Africa: SADAG <a href="tel:0800567567" class="text-sage-300 underline">0800 567 567</a> · Lifeline <a href="tel:0861322322" class="text-sage-300 underline">0861 322 322</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="py-20 md:py-28 bg-sage-700 text-white text-center">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">You Don't Have to Work Through Everything Alone</h2>
+      <p class="text-sage-100 leading-relaxed mb-4 max-w-2xl mx-auto">
+        You do not need to have the right words or know exactly what kind of support you need. Starting with one honest conversation is enough.
+      </p>
+      <p class="text-sage-100 leading-relaxed mb-10 max-w-2xl mx-auto">
+        Our team is here to listen, understand and help you take your next step.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="inline-flex justify-center items-center bg-white text-sage-800 px-8 py-4 rounded-full font-semibold hover:bg-sage-50 transition shadow-lg">
+          Book Your Free First Consultation
+        </a>
+        <a href="#fees" class="inline-flex justify-center items-center border-2 border-white/70 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition">
+          View Our Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-stone-900 text-stone-400 py-10 text-center text-sm">
+    <p class="text-xs max-w-2xl mx-auto px-6 mb-4 leading-relaxed">
+      Counselling support for personal growth and life challenges. Not a substitute for medical or mental health treatment. Individual results vary.
+    </p>
+    <p>&copy; 2026 Your Name · South Africa</p>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-consult-cta fixed bottom-0 left-0 right-0 z-40 md:hidden bg-sage-700 text-white px-4 py-3 shadow-lg border-t border-sage-600" role="complementary" aria-label="Book a free consultation">
+    <a href="contact.html" class="flex items-center justify-center gap-2 font-semibold text-sm">
+      <i class="fas fa-calendar-check" aria-hidden="true"></i>
+      Book Your Free First Consultation
+    </a>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

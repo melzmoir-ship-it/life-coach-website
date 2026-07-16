@@ -22,3 +22,27 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 12px 28px rgba(68, 95, 73, 0.12);
   border-color: #c8dbc8;
 }
+
+.services-hero {
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=2000&h=1200&fit=crop');
+  background-size: cover;
+  background-position: center;
+}
+
+.sticky-consult-cta {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+body.has-sticky-cta {
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  body.has-sticky-cta {
+    padding-bottom: 0;
+  }
+}
+
+.nav-link:hover {
+  color: #557a5b;
+}
