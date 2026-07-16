@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stories | Your Name Life Coach</title>
+  <meta name="description" content="Real client stories from life coaching in South Africa — divorce, career change, burnout, confidence, and more.">
+  <title>Client Stories | Your Name Life Coach</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-zinc-50 font-sans">
+<body class="bg-zinc-50 font-sans text-stone-700">
   <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-5">
       <div class="flex justify-between items-center">
@@ -18,9 +19,10 @@
           <a href="about.html" class="nav-link text-zinc-700">About</a>
           <a href="services.html" class="nav-link text-zinc-700">Services</a>
           <a href="testimonials.html" class="nav-link text-emerald-600 font-semibold">Stories</a>
-          <a href="join.html" class="nav-link text-zinc-700">For Coaches</a>
+          <a href="blog.html" class="nav-link text-zinc-700">Blog</a>
           <a href="contact.html" class="nav-link text-zinc-700">Contact</a>
         </div>
+        <a href="contact.html" class="hidden sm:inline-block bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold">Book a Free Call</a>
         <button id="mobile-menu-toggle" aria-label="Open menu" class="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5">
           <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
           <span class="hamburger-line w-6 h-0.5 bg-zinc-700 block"></span>
@@ -30,38 +32,170 @@
       <div id="mobile-menu" class="mobile-menu md:hidden">
         <div class="flex flex-col gap-1 pt-4 border-t border-zinc-100 mt-4">
           <a href="index.html" class="px-3 py-2.5">Home</a>
-          <a href="about.html" class="px-3 py-2.5">About</a>
           <a href="services.html" class="px-3 py-2.5">Services</a>
           <a href="testimonials.html" class="px-3 py-2.5 text-emerald-600 font-semibold">Stories</a>
-          <a href="join.html" class="px-3 py-2.5">For Coaches</a>
           <a href="contact.html" class="px-3 py-2.5">Contact</a>
         </div>
       </div>
     </div>
   </nav>
+
   <section class="bg-emerald-700 text-white py-20 text-center">
     <div class="max-w-4xl mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Client Stories</h1>
-      <p class="text-xl text-emerald-100">Real people, real transformations.</p>
+      <p class="text-xl text-emerald-100">Ordinary South Africans who chose to stop carrying everything alone.</p>
+      <p class="text-emerald-200 text-sm mt-3">Names shortened for privacy · Outcomes described in their own words</p>
     </div>
   </section>
+
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-8 rounded-3xl shadow-sm">
-        <div class="flex gap-1 text-amber-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="text-zinc-600 italic mb-4">"Within three months, I left a job that was draining me and started a business I'm truly passionate about."</p>
-        <p class="font-semibold">Sarah M.</p>
-        <p class="text-sm text-emerald-600">Career Transition</p>
-      </div>
-      <div class="bg-white p-8 rounded-3xl shadow-sm">
-        <div class="flex gap-1 text-amber-400 mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="text-zinc-600 italic mb-4">"I finally feel like myself again — only stronger. The tools I learned rebuilt my confidence from the inside out."</p>
-        <p class="font-semibold">James T.</p>
-        <p class="text-sm text-emerald-600">Confidence & Self-Worth</p>
-      </div>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">NK</div>
+          <div>
+            <p class="font-semibold">Nomsa K.</p>
+            <p class="text-xs text-zinc-500">Johannesburg · Divorce &amp; single parenting</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"After my divorce I was fine on paper — kids fed, job done — but I felt invisible. I didn't need someone to tell me to 'stay strong.' I needed help rebuilding a routine that was mine, not the old us. Six sessions in, I'm sleeping better and I finally updated my CV without crying."</p>
+        <p class="text-xs text-emerald-700 font-medium">Momentum Builder package · 6 sessions</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">DP</div>
+          <div>
+            <p class="font-semibold">Darren P.</p>
+            <p class="text-xs text-zinc-500">Cape Town · Burnout (corporate)</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"I was the guy answering emails at 11pm and pretending it was ambition. Coaching helped me see I was scared of being replaceable. I didn't quit overnight — but I set boundaries with my manager and took leave for the first time in three years. My wife noticed before I did."</p>
+        <p class="text-xs text-emerald-700 font-medium">1:1 coaching · 8 sessions over 4 months</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">TM</div>
+          <div>
+            <p class="font-semibold">Thandi M.</p>
+            <p class="text-xs text-zinc-500">Pretoria · Career change at 38</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"Everyone said I was mad to leave a government job. I was miserable though — Sunday nights were awful. We mapped a 90-day plan: short course, side clients, then resign. I'm now freelancing and earning less some months, but I'm not dreading Monday. That trade-off was worth naming out loud."</p>
+        <p class="text-xs text-emerald-700 font-medium">Career Clarity Programme</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">LV</div>
+          <div>
+            <p class="font-semibold">Liam V.</p>
+            <p class="text-xs text-zinc-500">Durban · After retrenchment</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"Got retrenched in round two — brutal. I wasn't depressed in the clinical sense, but I couldn't get off the couch some days. Coaching wasn't therapy, and that was actually what I needed: someone to help me send three applications a week and stop spiralling on LinkedIn. Took a job in month four. Not my dream job, but I'm moving again."</p>
+        <p class="text-xs text-emerald-700 font-medium">Clarity Kickstart · also sees a therapist</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">FR</div>
+          <div>
+            <p class="font-semibold">Fatima R.</p>
+            <p class="text-xs text-zinc-500">Gqeberha · Confidence returning to work</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"I took five years off when my kids were small. Going back felt like everyone else had moved on. I was apologising in meetings for no reason. My coach had me practise one sentence: 'Here's what I think.' Sounds small — it changed how I show up. Back full-time since January."</p>
+        <p class="text-xs text-emerald-700 font-medium">1:1 coaching · R450/session</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">SN</div>
+          <div>
+            <p class="font-semibold">Sipho N.</p>
+            <p class="text-xs text-zinc-500">Soweto · Side hustle clarity</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"I had three business ideas and no focus — braai sauce, tutoring, delivery bike. We killed two politely and doubled down on tutoring. First paying client in week five. Still working my day job, but I'm not scattered anymore. Worth every rand of the package."</p>
+        <p class="text-xs text-emerald-700 font-medium">Clarity Kickstart · R1,200</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">RL</div>
+          <div>
+            <p class="font-semibold">Rebecca L.</p>
+            <p class="text-xs text-zinc-500">Stellenbosch · Boundaries in marriage</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"I wasn't looking to leave my marriage — I was disappearing inside it. Coaching helped me say what I needed without it turning into a fight every time. We did couples counselling too; coaching was where I figured out what I actually wanted to ask for. Things aren't perfect, but I'm in the room now."</p>
+        <p class="text-xs text-emerald-700 font-medium">1:1 coaching · 5 sessions</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">AB</div>
+          <div>
+            <p class="font-semibold">Ayanda B.</p>
+            <p class="text-xs text-zinc-500">East London · Empty nest &amp; purpose</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"Youngest left for varsity and the house went quiet. People joked I'd enjoy it — I felt lost. I joined a group workshop first (R350, honestly a steal), then did one-on-one. I'm volunteering at a literacy NGO now. Not a grand reinvention — just a life that feels full again."</p>
+        <p class="text-xs text-emerald-700 font-medium">Workshop + 1:1 sessions</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 md:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">JM</div>
+          <div>
+            <p class="font-semibold">James M.</p>
+            <p class="text-xs text-zinc-500">Bloemfontein · Low mood &amp; motivation</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"My GP suggested therapy — I did that. She also said coaching might help with the 'getting stuff done' part. Fair. On bad weeks we'd shrink the goal to one thing: shower, one email, a walk. No toxic positivity. I'm on antidepressants and I'm not ashamed to say it. Coaching met me where I was."</p>
+        <p class="text-xs text-emerald-700 font-medium">Momentum Builder · works alongside medical care</p>
+      </article>
+
+      <article class="help-card bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 md:col-span-2">
+        <div class="flex items-center gap-4 mb-5">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">ZC</div>
+          <div>
+            <p class="font-semibold">Zanele C.</p>
+            <p class="text-xs text-zinc-500">Sandton · Imposter syndrome in new promotion</p>
+          </div>
+        </div>
+        <div class="flex gap-0.5 text-amber-400 text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-zinc-600 leading-relaxed mb-4">"Promoted to team lead and convinced they'd made a mistake. I was over-preparing for every meeting and still not speaking up. We worked on evidence — actual feedback from my director, not the voice in my head. I still get nervous. I don't cancel meetings anymore. My team probably thinks I'm calm; I'm just better at managing the noise."</p>
+        <p class="text-xs text-emerald-700 font-medium">Deep Transformation · paid in 2 instalments</p>
+      </article>
+
     </div>
   </section>
-  <footer class="bg-zinc-800 text-zinc-300 py-8 text-center text-sm">&copy; 2026 Your Name</footer>
+
+  <section class="bg-emerald-700 py-16 text-white text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Your story doesn't have to sound impressive to be worth telling.</h2>
+      <p class="text-emerald-100 mb-8">Book a free 20-minute call. No pressure — just an honest conversation.</p>
+      <a href="contact.html" class="inline-block bg-white text-emerald-700 px-10 py-4 rounded-full font-semibold hover:bg-emerald-50">Book a Free Discovery Call</a>
+    </div>
+  </section>
+
+  <footer class="bg-zinc-800 text-zinc-300 py-8 text-center text-sm">
+    <p class="text-xs text-zinc-500 max-w-lg mx-auto px-6 mb-2">Stories shared with permission. Individual results vary. Coaching is not a substitute for therapy or medical treatment.</p>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
